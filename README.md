@@ -7,6 +7,7 @@ Copied from ExpressJS Sample Application
 - secret file with credentials for the image registry must be created in the admin-che namespace
 - theia must be started with hostaname="0.0.0.0" so that it listens also to external processes
 - in the che-editor:yaml, add the attribute type: main to the endpoint to be used to add the workspace
+- url to open/create the workspace: https://192.168.49.2.nip.io/#https://github.com/MichelSc/playgrounddevfile
 
 ## Issues still to be solved
 

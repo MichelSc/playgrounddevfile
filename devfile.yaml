@@ -1,4 +1,18 @@
 schemaVersion: 2.1.0
 metadata:
-  name: kgviz-che-app-6
+  name: kgviz-che-app-7
+components:
+  - name: kgviz
+    container:
+      image: ghcr.io/flanders-make-vzw/ontology_based_kg_viz:latest
+      command: [ 'yarn', 'start', '--hostname', '0.0.0.0', '--port', '3333']
+      endpoints:
+        - name: kgviz-frontend
+          attributes:
+            type: main
+          exposure: public
+          protocol: http
+          targetPort: 3333
+      memoryLimit: 1G
+      mountSources: true
 
