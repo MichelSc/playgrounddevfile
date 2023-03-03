@@ -6,6 +6,9 @@ components:
     container:
       image: ghcr.io/flanders-make-vzw/ontology_based_kg_viz:latest
       command: [ 'yarn', 'start', '--hostname', '0.0.0.0', '--port', '3333']
+      env: 
+        - name: THEIA_ROOT_DIR
+          value: '/projects'
       endpoints:
         - name: kgviz-frontend
           attributes:
