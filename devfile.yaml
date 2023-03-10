@@ -1,6 +1,6 @@
 schemaVersion: 2.1.0
 metadata:
-  name: kgviz-che-app-7
+  name: kgviz-che-app-9
 components:
   - name: kgviz
     container:
