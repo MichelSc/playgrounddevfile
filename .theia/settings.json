@@ -1,0 +1,31 @@
+{
+    "fm-kgviz-repositories": [
+        {
+            "name": "KGViz repo: Start time",
+            "repo_protocol": "http",
+            "repo_host": "assistant-wp6.westeurope.cloudapp.azure.com:7200",
+            "repo_path": "/repositories/KBVIZ_Event4",
+            "user_name": "admin",
+            "user_password": "0akRglBq5ewBnV$8"
+        }
+    ],
+    "sparql-executor.endpoints": [
+        {
+            "name": "Executor repo: Start time",
+            "protocol": "http",
+            "host": "assistant-wp6.westeurope.cloudapp.azure.com:7200",
+            "path": "/repositories/KBVIZ_Event4",
+            "authentication": {
+                "type": "basic",
+                "username": "admin",
+                "password": "0akRglBq5ewBnV$8"
+            },
+            "output": "table"
+        },
+    ],
+    "fm-kgviz-query-relaxations": {
+        "DisjointSubclassAssumption": true,
+        "FilterNotExistsAllowed": false,
+        "BypassLoadCounts": false
+    }
+}
