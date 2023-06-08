@@ -8,13 +8,14 @@ components:
       command: [ 'yarn', 'start', '--hostname', '0.0.0.0', '--port', '3333']
       env: 
         - name: THEIA_ROOT_DIR
-          value: '/projects'
+          value: '/projects/playgrounddevfile'
         - name: HOME
           value: '/home/theia'
       endpoints:
         - name: kgviz-frontend
           attributes:
             type: main
+            urlRewriteSupported: true
           exposure: public
           protocol: http
           targetPort: 3333
