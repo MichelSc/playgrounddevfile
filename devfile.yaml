@@ -9,6 +9,8 @@ components:
       env: 
         - name: THEIA_ROOT_DIR
           value: '/projects'
+        - name: HOME
+          value: '/home/node'
       endpoints:
         - name: kgviz-frontend
           attributes:
