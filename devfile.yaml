@@ -8,14 +8,14 @@ components:
       command: [ 'yarn', 'start', '--hostname', '0.0.0.0', '--port', '3333']
       env: 
         - name: THEIA_ROOT_DIR
-          value: '/projects/playgrounddevfile'
+          value: '/projects/playgrounddevfile' # synchg with repo name, possibly fixed with project entry
         - name: HOME
-          value: '/home/theia'
+          value: '/home/theia' # place where theia will save user settings (.theia folder in user home folder)
       endpoints:
         - name: kgviz-frontend
           attributes:
             type: main
-            urlRewriteSupported: true
+            urlRewriteSupported: true # reuse che ingress and/or domain name
           exposure: public
           protocol: http
           targetPort: 3333
